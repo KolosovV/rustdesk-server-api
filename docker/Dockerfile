@@ -10,7 +10,8 @@ RUN \
   rm /tmp/s6-overlay*.tar.xz && \
   ln -s /run /var/run
 
-COPY rootfs /
+# When building with context at repo root, rootfs is under docker/rootfs
+COPY docker/rootfs /
 
 ENV RELAY=relay.example.com
 ENV ENCRYPTED_ONLY=0
