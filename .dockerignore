@@ -1,0 +1,17 @@
+# Build artifacts
+/target/
+/ui/html/dist/
+/node_modules/
+
+# VCS and CI
+/.git/
+/.github/
+
+# Local data and databases
+/db_v2.sqlite3
+/data/
+/ui/.vite/
+
+# OS files
+.DS_Store
+Thumbs.db
